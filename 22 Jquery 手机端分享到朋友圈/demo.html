@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<title>分享到朋友圈demo</title>
+
+
+<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+
+
+<style type="text/css">
+a{text-decoration:none;}
+.share_btn{ width:98%; margin:0 1%; text-align:center; margin-bottom:15px;}
+.share_btn a{ width:45%; padding:10px 0;display:inline-block;color:#333; background:#fff; border:#dedede solid 1px; border-radius:5px; text-align:center;box-shadow:rgba(0,0,0,0.2) 0 0 2px;}
+.shade{ background:#000;opacity:0.8; height:100%; width:100%; position:fixed; display:none; top:0; left:0; z-index:9999; }
+.simg{ position:relative; z-index:9999; top:5px; width:100%;}
+.close{ position:fixed; font-size:28px; color:#fff; z-index:10000; display:block; width:100%; height:100%; left:0; top:0;}
+</style>
+
+
+</head>
+
+<body>
+<div class="content">
+
+	<p class="share_btn">
+		<a href="javascript:;">发送给好友</a>
+    	<a href="javascript:;">分享到朋友圈</a>	
+	</p>
+
+</div>
+<div class="shade">
+	<img src="images/share.png"  class="simg"/>
+    <a href="javascript:close_fx();" class="close"></a>
+</div>
+</body>
+</html>
+
+
+<script type="text/javascript">
+$(function(){
+	$(".share_btn a").click(function(){
+		$(".shade").fadeToggle(1000);
+	});
+});
+function fenxiang(){
+	$(".shade").fadeToggle();
+}
+function close_fx(){
+	$(".shade").fadeToggle();
+}
+</script>
