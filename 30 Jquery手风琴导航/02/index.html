@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="author" content="" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <title> 手风琴真的不难好吧 </title>
+<style>
+    .accordion {
+        width:300px;
+        height:360px;
+        font-size:14px;
+        line-height:2.2em;
+        margin:30px auto;
+        padding:10px;
+        list-style-type:none;
+        border:1px solid #CCC;
+        cursor:default;
+    }
+    .accordion h3 {
+        margin:0 0 10px;
+        font-size:16px;
+        text-indent:2em;
+        background-color:#F2F2F2;
+    }
+    .accordion li div {
+        height:0;
+        padding:0 20px;
+        overflow:hidden;
+        -moz-transition:height 0.5s ease;  /*兼容FireBox*/
+        -webkit-transition:height 0.5s ease;   /*兼容Sarfi 和Chrome*/
+        transition:height 0.5s ease;
+    }  
+    .accordion .now div {
+        height:200px;
+    }
+</style>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+</head>
+<body>
+    <ul class="accordion">
+        <li  class="now">
+            <h3>寄李儋元锡</h3>
+            <div>
+              去年花里逢君别，今日花开已一年。 <br />
+              世事茫茫难自料，春愁黯黯独成眠。 <br />
+              身多疾病思田里，邑有流亡愧俸钱。 <br />
+              闻道欲来相问讯，西楼望月几回圆。 <br />
+            </div>
+        </li>
+        <li>
+            <h3>虞美人</h3>
+            <div>
+                 春花秋月何时了，往事知多少。小楼昨夜又东风，故国不堪回首月明中。<br />
+                 雕栏玉砌应犹在，只是朱颜改。问君能有几多愁，恰似一江春水向东流。
+            </div>
+        </li>
+        <li>
+            <h3>小重山</h3>
+            <div>
+                昨夜寒蛩不住鸣。惊回千里梦，已三更。起来独自绕阶行。人悄悄，帘外月胧明。<br />
+　　            白首为功名。旧山松竹老，阻归程。欲将心事付瑶琴。知音少，弦断有谁听？
+            </div>
+        </li>
+        <li>
+            <h3>江城子</h3>
+            <div>
+                十年生死两茫茫，不思量，自难忘。千里孤坟，无处话凄凉。纵使相逢应不识，尘满面，鬓如霜。<br />
+　　            夜来幽梦忽还乡，小轩窗，正梳妆。相顾无言，惟有泪千行。料得年年肠断处，明月夜，短松冈。
+            </div>
+        </li>
+    </ul>
+    <script type="text/javascript">
+        $('.accordion').on('mouseenter', 'li', function (event) {
+            $(this).addClass('now').siblings('.now').removeClass('now')   //遍历查找
+        });
+    </script>
+</body>
+</html>
