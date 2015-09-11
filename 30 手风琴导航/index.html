@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+  <title>手风琴导航</title>
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css" />
+  <script src="http://code.jquery.com/jquery-1.8.3.js"></script>
+  <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+  <link rel="stylesheet" href="{css/163css.css" />
+  <script>
+  $(function() {
+    $( "#accordion" )
+      .accordion({
+        header: "> div > h3",
+		heightStyle: "content"
+      })
+      .sortable({
+        axis: "y",
+        handle: "h3",
+        stop: function( event, ui ) {
+          ui.item.children( "h3" ).triggerHandler( "focusout" );
+        }
+      });
+  });
+  </script>
+</head>
+<body>
+<div id="accordion" class="box-163css">
+    <div class="group">
+        <h3>新闻模块</h3>
+        <ul class="edit-list">
+            <li>新闻编辑</li>
+            <li>发表文章</li>
+            <li>推荐文章</li>
+        </ul>
+    </div>
+    <div class="group">
+        <h3>产品模块</h3>
+        <ul class="edit-list">
+            <li>产品编辑</li>
+            <li>产品信息</li>
+            <li>推荐产品</li>
+        </ul>
+    </div>
+    <div class="group">
+        <h3>图片模块</h3>
+        <ul class="edit-list">
+            <li>新闻编辑</li>
+            <li>发表文章</li>
+            <li>推荐文章</li>
+            <li>新闻编辑</li>
+            <li>发表文章</li>
+            <li>推荐文章</li>
+        </ul>
+    </div>
+    <div class="group">
+        <h3>视频模块</h3>
+        <ul class="edit-list">
+            <li>产品编辑</li>
+            <li>产品信息</li>
+            <li>产品编辑</li>
+            <li>产品信息</li>
+            <li>推荐产品</li>
+        </ul>
+    </div>
+    <div class="group">
+        <h3>博客模块</h3>
+        <ul class="edit-list">
+            <li>新闻编辑</li>
+            <li>发表文章</li>
+            <li>推荐文章</li>
+        </ul>
+    </div>
+    <div class="group">
+        <h3>论坛模块</h3>
+        <ul class="edit-list">
+            <li>产品编辑</li>
+            <li>产品信息</li>
+            <li>推荐产品</li>
+            <li>产品编辑</li>
+            <li>产品编辑</li>
+            <li>产品信息</li>
+            <li>推荐产品</li>
+            <li>产品编辑</li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>
