@@ -1,0 +1,95 @@
+@charset "utf-8";
+
+/* CSS Document */
+body,h1,h2,h3,h4,h5,h6,p,ul,ol,li,form,img,dl,dt,dd,table,th,td,blockquote,fieldset,div,strong,label,em{margin:0;padding:0;border:0;}
+ul,ol,li{list-style:none;}
+input,button{margin:0;font-size:12px;vertical-align:middle;}
+body{font-size:12px;font-family:Arial, Helvetica, sans-serif;  text-align:center; margin:0 auto; }
+table{border-collapse:collapse;border-spacing:0;}
+b,em,i{ font-style:normal; font-weight:normal;}
+h1,h2,h3,h4{ font-size:14px;font-style:normal;}
+h5{ font-size:12px;}
+h6{ font-size:12px;font-weight:normal;}
+img{display:block;}
+a{ text-decoration:none;}
+
+.foucerank {
+	BACKGROUND: url(../images/foucebox.png) no-repeat 0px 0px
+}
+.foucerank .movinfo {
+	BACKGROUND: url(../images/foucebox.png) no-repeat 0px 0px
+}
+.scrollimg2_hd {
+	BACKGROUND: url(../images/scrollimg.png) no-repeat 0px 0px
+}
+.scrollimg2_tigger IMG {
+	BACKGROUND: url(../images/scrollimg.png) no-repeat 0px 0px
+}
+.scrollimg2_tigger_hoverbg {
+	BACKGROUND: url(../images/scrollimg.png) no-repeat 0px 0px
+}
+
+.box-163css{ margin:20px auto;HEIGHT: 306px;WIDTH: 694px;}
+.scrollimg {
+	FLOAT: left; OVERFLOW: hidden; WIDTH: 694px; POSITION: relative; HEIGHT: 306px
+}
+.scrollimg2 {
+	FLOAT: left; OVERFLOW: hidden; WIDTH: 694px; POSITION: relative; HEIGHT: 306px
+}
+.scrollimg2_bigimg {
+	DISPLAY: none; LEFT: 0px; OVERFLOW: hidden; WIDTH: 694px; POSITION: absolute; TOP: 0px; HEIGHT: 261px
+}
+.scrollimg2_bigimg IMG {
+	WIDTH: 694px; HEIGHT: 261px
+}
+.scrollimg2_bigimg DIV {
+	FLOAT: left; POSITION: relative
+}
+.scrollimg2_hd {
+	BACKGROUND-POSITION: -63px 0px; DISPLAY: block; Z-INDEX: 2; LEFT: 0px; OVERFLOW: hidden; WIDTH: 77px; TEXT-INDENT: -9999px; POSITION: absolute; TOP: 0px; HEIGHT: 76px; _background-position: -143px 0
+}
+.scrollimg2_tigger {
+	BACKGROUND: #181818; OVERFLOW: hidden; POSITION: relative; TOP: 261px; HEIGHT: 45px
+}
+.scrollimg2_tigger UL {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 3px; PADDING-BOTTOM: 0px; PADDING-TOP: 4px; TEXT-ALIGN: center
+}
+.scrollimg2_tigger LI {
+	DISPLAY: inline; FLOAT: left; MARGIN-LEFT: 6px; OVERFLOW: hidden; WIDTH: 62px; POSITION: relative; HEIGHT: 37px
+}
+.scrollimg2_tigger A {
+	LEFT: 0px; POSITION: absolute; TOP: 0px
+}
+.scrollimg2_tigger IMG {
+	PADDING-RIGHT: 1px; PADDING-LEFT: 1px; PADDING-BOTTOM: 1px; WIDTH: 60px; PADDING-TOP: 1px; HEIGHT: 35px
+}
+.scrollimg2_tigger_hoverbg {
+	BACKGROUND-POSITION: 0px -38px; Z-INDEX: 2; LEFT: 9px; WIDTH: 62px; CURSOR: pointer; POSITION: absolute; TOP: 0px; HEIGHT: 41px
+}
+.scrollimg2_tigger .scrollimg2_tigger_link {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; Z-INDEX: 3; LEFT: 3px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; POSITION: absolute
+}
+.scrollimg2_tigger .scrollimg2_tigger_link A {
+	DISPLAY: block; FILTER: alpha(opacity=0); WIDTH: 60px; HEIGHT: 35px; opacity: 0
+}
+.scrollimg2_bigimg .scrollimg2_bg {
+	Z-INDEX: 98; BACKGROUND: #000;  LEFT: 0px; FLOAT: none; WIDTH: 694px; POSITION: absolute; TOP: 221px; HEIGHT: 40px; FILTER: alpha(opacity=0); opacity: 0; -moz-opacity: 0
+}
+.scrollimg2_txt {
+	FONT-WEIGHT: normal; FONT-SIZE: 14px; Z-INDEX: 99; LEFT: 10px; COLOR: #fff; POSITION: absolute; TOP: 232px;FILTER: alpha(opacity=0); opacity: 0; -moz-opacity: 0
+}
+.foucerank {
+	FLOAT: left; WIDTH: 276px; POSITION: relative; HEIGHT: 306px; BACKGROUND-COLOR: #282828
+}
+.foucerank H2 {
+	PADDING-LEFT: 24px; FONT-SIZE: 14px; COLOR: #fff; LINE-HEIGHT: 37px; HEIGHT: 37px
+}
+.foucerank .ranklist {
+	PADDING-RIGHT: 18px; PADDING-LEFT: 24px; PADDING-BOTTOM: 0px; PADDING-TOP: 5px
+}
+.foucerank .ranklist LI {
+	MARGIN-BOTTOM: 10px
+}
+.foucerank .ranklist EM {
+	BORDER-LEFT-COLOR: #4d4d4d; BORDER-BOTTOM-COLOR: #4d4d4d; COLOR: #848484; BORDER-TOP-COLOR: #4d4d4d; BORDER-RIGHT-COLOR: #4d4d4d
+}
