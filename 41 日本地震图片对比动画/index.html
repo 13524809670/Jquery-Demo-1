@@ -1,0 +1,75 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<HTML lang=zh-CN xmlns="http://www.w3.org/1999/xhtml">
+<HEAD>
+<TITLE>日本地震灾区前后对比</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=gb2312">
+<META http-equiv=Content-Language content=zh-CN>
+<LINK href="css/163css.css" type=text/css rel=stylesheet>
+<SCRIPT src="js/jquery-1.4.2.js" type=text/javascript charset=utf-8></SCRIPT>
+
+<SCRIPT type=text/javascript charset=utf-8> 
+	jQuery(function(){
+	
+		// Loop through all the sets of before and after pics
+		jQuery(".beforeafter").each(function(){
+		
+			// Set the container's size to the size of the image
+			jQuery(this).width(jQuery(this).find("img[rel=before]").attr("width")).height(jQuery(this).find("img[rel=before]").attr("height"));
+		
+			// Convert the images into background images on layered divs
+			jQuery(this).append("<div class='after'></div>").find(".after").css({"background": "url(" + jQuery(this).find("img[rel=after]").attr("src") + ")", "width": jQuery(this).find("img[rel=after]").attr("width") + "px", "height": jQuery(this).find("img[rel=after]").attr("height") + "px"});
+			jQuery(this).append("<div class='before'></div>").find(".before").css({"background": "url(" + jQuery(this).find("img[rel=before]").attr("src") + ")", "width": jQuery(this).find("img[rel=before]").attr("width") - 40 + "px", "height": jQuery(this).find("img[rel=before]").attr("height") + "px"});
+			
+			// Add a helpful message
+			jQuery(this).append("<div class='help'>www.163css.net</div>");
+			
+			// Remove the original images
+			jQuery(this).find("img").remove();
+			
+			// Event handler for the mouse moving over the image
+			jQuery(this).mousemove(function(event){
+				
+				// Need to know the X position of the parent as people may have their browsers set to any width
+				var offset = jQuery(this).offset().left;
+				
+				// Don't let the reveal go any further than 50 pixels less than the width of the image
+				// or 50 pixels on the left hand side
+				if ((event.clientX - offset) < (jQuery(this).find(".after").width() -50) && (event.clientX - offset) > 50) {
+					// Adjust the width of the top image to match the cursor position
+					jQuery(this).find(".before").width(event.clientX - offset);
+				}
+				
+			});
+			
+			// Fade out the help message after the first hover
+			jQuery(this).hover(function(){
+			
+				jQuery(this).find(".help").animate({"opacity": 0}, 400, function(){ jQuery(this).find(".help").remove(); });
+				
+			});
+			
+		});
+		
+	});
+	
+</SCRIPT>
+
+<META content="MSHTML 6.00.6000.17092" name=GENERATOR></HEAD>
+<BODY>
+<div class="box-163css">
+	<div id=beforeafter>
+	  <H2><span>数据来源：www.163css.net</span>宫城县谷川浜 [鼠标移动图片上滑动观看]</H2>
+	  <div class=section>
+		  <div class=beforeafter>
+		  <IMG height=529 alt="" src="images/23.jpg" width=940 rel="before"> <IMG height=529 alt="www.163css.net" src="images/24.jpg" width=940 rel="after">		  
+		  </div>
+	  </div>
+	  <div class=section>
+		  <div class=beforeafter>
+		  <IMG height=529 alt="" src="images/15.jpg" width=940 rel="before"> <IMG height=529 alt="www.163css.net" src="images/16.jpg" width=940 rel="after">		  
+		  </div>
+	  </div>
+	</div>
+</div>
+</BODY>
+</HTML>

@@ -1,0 +1,22 @@
+/* CSS Document */
+body,h1,h2,h3,h4,h5,h6,p,ul,ol,li,form,img,dl,dt,dd,table,th,td,blockquote,fieldset,div,strong,label,em{margin:0;padding:0;border:0;}
+ul,ol,li{list-style:none;}
+input,button{margin:0;font-size:12px;vertical-align:middle;}
+body{font-size:12px;font-family:Arial, Helvetica, sans-serif;  text-align:center; margin:0 auto; background:url(../images/BG.jpg) repeat-y;}
+table{border-collapse:collapse;border-spacing:0;}
+
+#container{ width:100%;  text-align:left; margin:0 auto; }
+a{color:#333;text-decoration:none;}
+a:hover{color:#356e0d; text-decoration:underline;}
+
+
+.box-163css{ width:940px; margin:20px auto;}
+.box-163css h2{FONT-WEIGHT: bold; FONT-SIZE: 18px; LINE-HEIGHT: 31px; TEXT-ALIGN: left}
+.box-163css h2 span{ float:right; font-weight:normal;}
+.section {MARGIN-TOP: 2em; POSITION: relative}
+P.source {FONT-SIZE: 12px; RIGHT: 0px; COLOR: #999; POSITION: absolute; TOP: 0px}
+.beforeafter {OVERFLOW: hidden; POSITION: relative}
+.before {LEFT: 0px; POSITION: absolute; TOP: 0px}
+.after {LEFT: 0px; POSITION: absolute; TOP: 0px}
+.before {BORDER-RIGHT: #000 5px solid; -moz-box-shadow: 1px 0 20px #222; -webkit-box-shadow: 1px 0 20px #222; box-shadow: 1px 0 20px #222}
+.help {RIGHT: 70px; FONT: bold 20px/1em Helvetica, Arial, sans-serif; COLOR: #fff; BOTTOM: 20px; POSITION: absolute; opacity: 0.7}
