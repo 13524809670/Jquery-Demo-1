@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <!-- http://www.bootcss.com/p/unslider/ -->
+    <style>
+        * {
+           margin:0;
+           padding:0;
+        }
+        .banner { position: relative; overflow: auto;left:50%;margin-left:-960px;width:1920px; }
+    .banner li { list-style: none; margin:0 auto;}
+        .banner ul li { float: left; }
+            .banner .dots {
+	position: absolute;
+	top: 480px;
+	left: 50%;
+	margin-left: -60px;
+}
+.banner .dots li {
+	width: 20px;
+	height: 20px;
+	text-indent: -9999px;
+	margin-right: 20px;
+	background: url(images/btn_bg.png) 0 0 no-repeat;
+	float: left;
+	cursor: pointer;
+}
+.banner .dots li.active {
+	background: url(images/btn_bg.png) 0 -20px no-repeat;
+}
+    </style>
+    
+</head>
+<body>
+
+    <div class="banner">
+    <ul>
+        <li><img src="images/slide01.png" /></li>
+        <li><img src="images/slide02.png" /></li>
+        <li><img src="images/slide03.png" /></li>
+    </ul>
+        <script src="jquery-1.7.2.min.js"></script>
+        <script src="unslide.js"></script>
+        <script>
+            $('.banner').unslider({
+                speed: 500,               //  The speed to animate each slide (in milliseconds)
+                delay: 3000,              //  The delay between slide animations (in milliseconds)
+                complete: function () { },  //  A function that gets called after every slide animation
+                keys: true,               //  Enable keyboard (left, right) arrow shortcuts
+                dots: true,               //  Display dot navigation
+                fluid: false              //  Support responsive design. May break non-responsive designs
+            });
+    </script>
+</div>
+</body>
+</html>
