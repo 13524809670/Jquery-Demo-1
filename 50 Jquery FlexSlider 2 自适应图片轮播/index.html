@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="author" content="webname">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<link type="text/css" rel="stylesheet" href="css/flexslider.css" />
+<link type="text/css" rel="stylesheet" href="css/css.css" />
+<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
+<title>flexslider自适应轮播</title>
+    <script>
+
+        $(function () {
+
+            //banner轮播图
+            $(".flexslider").flexslider({
+                animation: "slide"
+            });
+
+        });
+    </script>
+</head>
+
+<body>	
+
+	<!--banner 轮播图-->
+		<div class="banner">
+			<div class="flexslider">
+				<ul class="slides">
+					<li><a href="#"><img src="images/slide01.png" /></a></li>
+					<li><a href="#"><img src="images/slide02.png" /></a></li>
+					<li><a href="#"><img src="images/slide03.png" /></a></li>	
+					<li><a href="#"><img src="images/slide04.png" /></a></li>	
+				</ul>	
+			</div>		
+		</div>
+	<!--banner 轮播图-->
+	
+</body>
+</html>

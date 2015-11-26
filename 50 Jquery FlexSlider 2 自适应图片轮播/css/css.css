@@ -1,0 +1,107 @@
+﻿/*通用类*/
+*{
+	margin:0;
+	padding:0;	
+}
+body{		
+	width:100%;	
+    max-width:970px;
+	margin:0 auto;
+	font-size:12px;	
+	font-family:"Microsoft Yahei";	
+	background:#171717;
+    overflow-x:hidden;
+}
+/*不同设备字体em基准*/
+@media screen and (min-width: 320px) and (max-width: 360px){ 
+  body{
+  	font-size:13.5px;
+  }
+}
+@media screen and (min-width: 360px) and (max-width: 480px){ 
+  body{
+  	font-size:15px;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 700px){ 
+  body{
+  	font-size:22.5px;
+  }
+}
+@media screen and (min-width: 700px){ 
+  body{
+  	font-size:28px;
+  }
+}
+/*不同设备字体em基准*/
+img{
+	border:none;	
+}
+a{
+	color:#6b6b6b;
+	text-decoration:none;	
+}
+ul{
+	list-style-type:none;	
+}
+em{
+	font-style:normal;	
+}
+.lt{
+	float:left;	
+}
+.rt{
+	float:right;	
+}
+input.sub,label{
+	border:none;	
+	cursor:pointer;
+}
+div.clear{
+	font: 0px Arial; line-height:0;
+	height:0; 
+	overflow:hidden;	
+	clear:both;	
+}
+
+/*banner 轮播图*/
+.banner{
+	width:100%;	
+	position:relative;
+	overflow:hidden;
+}
+.banner img{
+	width:100%;
+	height:auto;	
+}
+.banner .flex-control-nav{
+	width:150px;
+	position:absolute;
+	height:2em;
+	line-height:2em;
+    bottom:0;
+    right:0;
+    float:right;
+}
+.banner .flex-control-paging li{
+	margin:0.5em 0.2em 0 0.2em;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    color: #fff;
+    font-size: 12px;
+    float: left;
+    cursor: pointer;
+}
+.banner .flex-control-paging li a{
+	width: 15px;
+		height: 15px;
+		cursor: pointer;
+        text-indent:1000000px;
+        background:url(../images/banner_bg.png) -28px -119px no-repeat;
+        margin-right:20px;
+}
+.banner .flex-control-paging li a.flex-active{
+	background:url(../images/banner_bg.png) 0 -119px no-repeat;
+}
+/*banner 轮播图*/
