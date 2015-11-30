@@ -116,6 +116,13 @@
                  arrows: true,
                  closeBtn: true
              });
+             $("#roll li").mouseover(function () {
+                 $("#roll span").hide();
+                 $(this).find("span").show();
+             });
+             $("#roll li").mouseout(function () {
+                 $("#roll span").hide();
+             });
          });
     </script>
 </body>
