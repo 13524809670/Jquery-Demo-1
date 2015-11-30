@@ -1,0 +1,122 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>点击查看大图</title>
+    <link href="css/fancyBox.css" rel="stylesheet" />
+   
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        body {
+            background:#222;
+        }
+
+        .roll {
+		overflow: hidden;
+		width: 364px;
+		height: 260px;
+        margin:0 0 0 6px;
+	}
+
+	.roll ul {
+		width: 364px;
+		margin-top: 12px;
+		overflow: hidden;
+	}
+
+	.roll li {
+		float: left;
+		position: relative;
+		width: 116px;
+		height: 116px;
+		margin-right: 4px;
+		display: inline;
+		margin-bottom: 4px;
+	}
+
+	.roll li img {
+		width: 116px;
+		height: 116px;
+	}
+
+	.roll li span {
+		background: #222;
+		width: 116px;
+		height: 116px;
+		position: absolute;
+		left: 0px;
+		top: 0px;
+		display: none;
+        opacity:0.55;
+        filter:Alpha(opacity=55);
+	}
+    </style>
+    
+
+</head>
+<body>
+    <div class="roll" id="roll">
+                    <div class="wrap" id="wrap">
+                        <ul>
+                            <li class="smallimg ">
+                                <!-- big image url 放在a标签的href中 -->
+                                <a class="fancybox" href="images/a.jpg" data-fancybox-group="gallery">
+                                    <img src="images/a.jpg" />
+                                    <span><img src="images/scroll_mask.png" /></span>
+                                </a>
+                            </li>
+                            <li class="smallimg ">
+                                <a class="fancybox" href="images/a.jpg" data-fancybox-group="gallery">
+                                    <img src="images/a.jpg" />
+                                    <span><img src="images/scroll_mask.png" /></span>
+                                </a>
+                            </li>
+                            <li class="smallimg ">
+                                <a class="fancybox" href="images/a.jpg" data-fancybox-group="gallery">
+                                    <img src="images/a.jpg" />
+                                    <span><img src="images/scroll_mask.png" /></span>
+                                </a>
+                            </li>
+                            <li class="smallimg ">
+                                <a class="fancybox" href="images/a.jpg" data-fancybox-group="gallery">
+                                    <img src="images/a.jpg" />
+                                    <span><img src="images/scroll_mask.png" /></span>
+                                </a>
+                            </li>
+                            <li class="smallimg ">
+                                <a class="fancybox" href="images/a.jpg" data-fancybox-group="gallery">
+                                    <img src="images/a.jpg" />
+                                    <span><img src="images/scroll_mask.png" /></span>
+                                </a>
+                            </li>
+                            <li class="smallimg ">
+                                <a class="fancybox" href="images/a.jpg" data-fancybox-group="gallery">
+                                    <img src="images/a.jpg" />
+                                    <span><img src="images/scroll_mask.png" /></span>
+                                </a>
+                            </li>
+                    
+                
+                        </ul>
+                    </div>
+                </div>
+
+    <script src="js/jquery-1.7.1.min.js"></script>
+<!--    <script src="js/atrk.js"></script>-->
+    <script src="js/fancyBox.js"></script>
+     <script>
+         //pc 右侧显示大图轮播 start 
+         $(document).ready(function () {
+             $(".fancybox").fancybox({
+                 padding: 0,
+                 fitToView: true,
+                 arrows: true,
+                 closeBtn: true
+             });
+         });
+    </script>
+</body>
+</html>
