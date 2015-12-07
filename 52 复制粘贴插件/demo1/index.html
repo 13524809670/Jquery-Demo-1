@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+    <title>js文本复制与剪切插件clipboard</title>
+    <script src="clipboard.min.js"></script>
+</head>
+
+<body>
+<div id="main">
+	<div class="demo">
+		<input id="foo" value="http://sc.chinaz.com/">
+		<button class="btn" data-clipboard-target="#foo" aria-label="复制成功！">复制</button>
+		<br/>
+		<textarea id="bar">testtesttesettestestes</textarea>
+		<br/>
+		<button class="btn" data-clipboard-action="cut" data-clipboard-target="#bar" aria-label="已剪切">剪切</button>
+	</div>
+	 
+</div>
+
+<script>
+var clipboard = new Clipboard('.btn');
+
+clipboard.on('success', function(e) {
+	alert("复制成功！")
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>ZeroClipboard 实现复制到剪贴板功能</title>
+    <style>
+        .copy-tips {
+            width:auto;
+            height:30px;
+            color:red;
+            font:bold 30px/30px Arial;
+            position:absolute;
+            left:50%;
+            top:50%;
+            margin:-15px 0 0 -125px;
+        }
+    </style>
+</head>
+<body>
+    <div class="line">
+	    <h2>点击复制表单中的文本 demo1</h2>
+	    <a href="javascript:;" class="copy-input">点击复制单中的文本</a>
+	    <input type="text" class="input" value="test1" />
+    </div>
+
+    <div class="line">
+	    <h2>点击复制表单中的文本 demo2</h2>
+	    <a href="javascript:;" class="copy-input">点击复制单中的文本</a>
+	    <input type="text" class="input" value="test2" />
+    </div>
+
+    <div class="line">
+	    <h2>点击复制表单中的文本 demo3</h2>
+	    <a href="javascript:;" class="copy-input">点击复制单中的文本</a>
+	    <input type="text" class="input" value="test3" />
+    </div>
+
+    <div class="line">
+	    <h2>点击复制表单中的文本 demo4</h2>
+	    <a href="javascript:;" class="copy-input">点击复制单中的文本</a>
+	    <input type="text" class="input" value="test4" />
+    </div>
+
+    <div class="line">
+	    <h2>点击复制表单中的文本 demo5</h2>
+	    <a href="javascript:;" class="copy-input">点击复制单中的文本</a>
+	    <input type="text" class="input" value="test5" />
+    </div>
+
+    <!-- JavaScript files -->
+    <script src="jquery.js"></script>
+    <script src="jquery.zclip.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            // 定义所有 class 为 copy-input 标签，点击后可复制 class 为 input 的文本 
+            $(".copy-input").zclip({
+                path: "ZeroClipboard.swf",
+                copy: function () {
+                    return $(this).parent().find(".input").val();
+                },
+
+                // for test 复制成功后的操作
+                afterCopy: function () {
+                    var inputVal = $(this).parent().find(".input").val();
+                    var $copysuc = $("<div class='copy-tips'>复制成功! "+ inputVal +"</div>");
+                    $("body").append($copysuc);
+                    $(".copy-tips").fadeOut(2000);
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
