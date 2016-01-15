@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+		<meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+        <title>Arctext.js - Curving text with CSS3 and jQuery</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <meta name="description" content="Arctext.js - Curving text with CSS3 and jQuery" />
+        <meta name="keywords" content="arc, letters, words, rotate, warp, circle, curve, along, path, jquery, css3, transform" />
+        <meta name="author" content="Codrops" />
+        <link rel="shortcut icon" href="../favicon.ico"> 
+        <link rel="stylesheet" type="text/css" href="css/demo.css" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link href='http://fonts.googleapis.com/css?family=Montserrat|Sail|Concert+One' rel='stylesheet' type='text/css' />
+		<style>
+		#btn{
+			width:100px;
+			height: 30px;
+			color:#000;
+		}
+		#example2{
+			font-size: 30px;
+			display: none;
+		}
+		</style>
+    </head>
+    <body>
+        <div class="container">
+			
+			<section class="sub" id="sub1">
+				<div class="example">
+					<h3 id="example1">I wanna be curved</h3>
+					<h2 id="example2">teesfxxvxcvsssaf</h2>
+				</div>
+				<div class="code">
+					<h4>Example 1 - Curve</h4>
+					<p>Curved with a radius of 300</p>
+					<code>$example1.arctext({radius: 300})</code>
+				</div>
+				<div class="clr"></div>
+			</section>
+			<div class="clr"></div>
+			<div id="btn">点击我</div>
+        </div>
+        <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+		<script type="text/javascript" src="js/jquery.arctext.js"></script>
+		<script type="text/javascript">
+			//var $headline = $('#headline').hide();
+		
+			//var $word1		= $('#arc-wrapper').find('h3').hide();
+			//var $word2		= $('#arc-wrapper').find('h4').hide();
+			
+			
+			init();
+
+			//google.load('webfont','1');
+			
+			//google.setOnLoadCallback(function() {
+			//	WebFont.load({
+			//		google		: {
+			//			families	: ['Montserrat','Concert One']
+			//		},
+			//		fontactive	: function(fontFamily, fontDescription) {
+			//			init();
+			//		},
+			//		fontinactive	: function(fontFamily, fontDescription) {
+			//			init();
+			//		}
+			//	});
+			//});
+			
+			function init() {
+								
+				
+				$("#example1").arctext({radius: 1000});
+				$("#btn").on("click",function(){
+
+					$("#example2").css("display","block");
+					$("#example2").arctext({radius: 1000});
+				
+				})
+				
+				
+			
+			
+			};
+		</script>
+    </body>
+</html>
