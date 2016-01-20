@@ -1,0 +1,215 @@
+﻿/*通用类*/
+*{
+	margin:0;
+	padding:0;	
+}
+body{		
+	width:100%;	
+    max-width:960px;
+	margin:0 auto;
+	font-size:12px;	
+	font-family:"Microsoft Yahei";	
+	background:#171717;
+    overflow-x:hidden;
+}
+/*不同设备字体em基准*/
+@media screen and (min-width: 320px) and (max-width: 360px){ 
+  body{
+  	font-size:13.5px;
+  }
+}
+@media screen and (min-width: 360px) and (max-width: 480px){ 
+  body{
+  	font-size:15px;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 700px){ 
+  body{
+  	font-size:22.5px;
+  }
+}
+@media screen and (min-width: 700px){ 
+  body{
+  	font-size:28px;
+  }
+}
+/*不同设备字体em基准*/
+img{
+	border:none;	
+}
+a{
+	color:#6b6b6b;
+	text-decoration:none;	
+}
+ul{
+	list-style-type:none;	
+}
+em{
+	font-style:normal;	
+}
+.lt{
+	float:left;	
+}
+.rt{
+	float:right;	
+}
+input.sub,label{
+	border:none;	
+	cursor:pointer;
+}
+div.clear{
+	font: 0px Arial; line-height:0;
+	height:0; 
+	overflow:hidden;	
+	clear:both;	
+}
+
+/*banner 轮播图*/
+.banner{
+	width:100%;	
+	position:relative;
+	overflow:hidden;
+}
+.banner img{
+	width:100%;
+	height:auto;	
+}
+.banner .flex-control-nav{
+	bottom:0.26em;	
+	width:100%;
+	position:absolute;
+	height:2em;
+	line-height:2em;
+	background:url("../images/abg50.png");	
+}
+.banner .flex-control-paging li{
+	margin:0.5em 0.2em 0 0.2em;
+	width:1em;
+	height:1em;
+	text-align:center;
+}
+.banner .flex-control-paging li a{
+	background:#c5c5c5;	
+	width:0.8em;
+	height:0.8em;
+	position:relative;
+	top:0.1em;
+}
+.banner .flex-control-paging li a.flex-active{
+	background:#fff;	
+	width:1em;
+	height:1em;
+	top:0;
+}
+/*banner 轮播图*/
+
+/* contenter begin */
+.contenter {
+    width:96%;
+    margin:0 2%;
+        overflow-x:hidden;
+
+}
+.home_nav a{
+	float:left;
+	display:inline-block;
+	width:32%;
+	margin:1% 2% 2% 0;	
+	text-align:center;
+	font-size:0.8em;
+	line-height:2em;
+	color:#fff;
+    background:#636363;
+}
+.home_nav a.last{
+	margin:1% 0 2% 0;
+}
+.home_nav img{
+	width:20%;
+	height:auto;
+    display:block;
+    margin:15px auto 10px;	
+}
+.design,.strategy {
+    width:100%;
+    height:auto;
+}
+.design .des_img {
+    width:68%;
+    height:auto;
+    float:left;
+    margin-bottom:1%;
+}
+.design .des_img img {
+    width:100%;
+}
+.design .des_intro {
+    width:32%;
+    float:left;
+    position:relative;
+}
+.design .des_intro img {
+    width:100%;
+}
+.design .des_intro a {
+    float:left;
+	display:inline-block;
+	width:100%;
+    padding-left:4%;
+	font-size:1.2em;
+	line-height:1.5em;
+	color:#fff;
+    background-size:100%;
+    position:absolute;
+    left:1em;
+    top:1em;
+}
+.design .des_intro a img {
+    width:20%;
+
+}
+.design .des_intro span {
+	font-size:1.5em;
+}
+
+
+.strategy .str_img {
+    width:68%;
+    height:auto;
+    float:right;
+}
+.strategy .str_img img {
+    width:100%;
+}
+.strategy .str_intro {
+    width:32%;
+    float:left;
+    position:relative;
+}
+.strategy .str_intro img {
+    width:100%;
+}
+.strategy .str_intro a {
+    float:left;
+    text-align:right;
+	display:inline-block;
+	width:100%;
+    padding-left:4%;
+	font-size:1.2em;
+	line-height:1.5em;
+	color:#fff;
+    background-size:100%;
+    position:absolute;
+    right:1em;
+    top:1em;
+}
+.strategy .str_intro a img {
+    width:20%;
+
+}
+.strategy .str_intro span {
+	font-size:1.5em;
+}
+
+/* contenter end */
+
