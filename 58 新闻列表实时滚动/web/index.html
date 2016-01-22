@@ -1,0 +1,150 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <title>砸金蛋</title>
+    <link href="css/luckDraw.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="luck_draw">
+        <div class="container">
+
+        
+            <div class="lottery_history">
+                <h4>砸蛋有惊喜实时中奖名单</h4>
+                <ul class="lottery_list_tit">
+                    <li>
+                        <div class="fore1">用户名</div>
+                        <div class="fore2">中奖记录</div>
+                        <div class="fore3">奖励</div>
+                    </li>
+                </ul>
+                <div class="lottery_list">
+                    <ul>
+                        <li>
+                            <div class="fore1">kik***1</div>
+                            <div class="fore2">12月12日 12：20：20</div>
+                            <div class="fore3"><span>5</span>元</div>
+                        </li>
+                        <li>
+                            <div class="fore1">kik***2</div>
+                            <div class="fore2">12月12日 12：20：20</div>
+                            <div class="fore3"><span>5</span>元</div>
+                        </li>
+                        <li>
+                            <div class="fore1">kik***3</div>
+                            <div class="fore2">12月12日 12：20：20</div>
+                            <div class="fore3"><span>5</span>元</div>
+                        </li>
+                        <li>
+                            <div class="fore1">kik***4</div>
+                            <div class="fore2">12月12日 12：20：20</div>
+                            <div class="fore3"><span>5</span>元</div>
+                        </li>
+                        <li>
+                            <div class="fore1">kik***5</div>
+                            <div class="fore2">12月12日 12：20：20</div>
+                            <div class="fore3"><span>5</span>元</div>
+                        </li>
+                        <li>
+                            <div class="fore1">kik***6</div>
+                            <div class="fore2">12月12日 12：20：20</div>
+                            <div class="fore3"><span>5</span>元</div>
+                        </li>
+                        <li>
+                            <div class="fore1">kik***7</div>
+                            <div class="fore2">12月12日 12：20：20</div>
+                            <div class="fore3"><span>5</span>元</div>
+                        </li>
+                        <li>
+                            <div class="fore1">kik***8</div>
+                            <div class="fore2">12月12日 12：20：20</div>
+                            <div class="fore3"><span>5</span>元</div>
+                        </li>
+                        <li>
+                            <div class="fore1">kik***9</div>
+                            <div class="fore2">12月12日 12：20：20</div>
+                            <div class="fore3"><span>5</span>元</div>
+                        </li>
+                        <li>
+                            <div class="fore1">kik***10</div>
+                            <div class="fore2">12月12日 12：20：20</div>
+                            <div class="fore3"><span>5</span>元</div>
+                        </li>
+                        <li>
+                            <div class="fore1">kik***11</div>
+                            <div class="fore2">12月12日 12：20：20</div>
+                            <div class="fore3"><span>5</span>元</div>
+                        </li>
+                        <li>
+                            <div class="fore1">kik***12</div>
+                            <div class="fore2">12月12日 12：20：20</div>
+                            <div class="fore3"><span>5</span>元</div>
+                        </li>
+                        <li>
+                            <div class="fore1">kik***13</div>
+                            <div class="fore2">12月12日 12：20：20</div>
+                            <div class="fore3"><span>5</span>元</div>
+                        </li>
+                        <li>
+                            <div class="fore1">kik***14</div>
+                            <div class="fore2">12月12日 12：20：20</div>
+                            <div class="fore3"><span>5</span>元</div>
+                        </li>
+                        <li>
+                            <div class="fore1">kik***15</div>
+                            <div class="fore2">12月12日 12：20：20</div>
+                            <div class="fore3"><span>5</span>元</div>
+                        </li>
+                        <li>
+                            <div class="fore1">kik***16</div>
+                            <div class="fore2">12月12日 12：20：20</div>
+                            <div class="fore3"><span>5</span>元</div>
+                        </li>
+                        <li>
+                            <div class="fore1">kik***17</div>
+                            <div class="fore2">12月12日 12：20：20</div>
+                            <div class="fore3"><span>5</span>元</div>
+                        </li>
+                        <li>
+                            <div class="fore1">kik***18</div>
+                            <div class="fore2">12月12日 12：20：20</div>
+                            <div class="fore3"><span>5</span>元</div>
+                        </li>
+                        <li>
+                            <div class="fore1">kik***19</div>
+                            <div class="fore2">12月12日 12：20：20</div>
+                            <div class="fore3"><span>5</span>元</div>
+                        </li>
+                        <li>
+                            <div class="fore1">kik***20</div>
+                            <div class="fore2">12月12日 12：20：20</div>
+                            <div class="fore3"><span>5</span>元</div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="my_lottery"><a href="#">我的中奖记录</a></div>
+            </div>
+
+        
+        </div>
+    </div>
+    
+
+  
+
+    <script src="js/jquery-1.7.2.min.js"></script>
+    <script src="js/scroll.js"></script>   
+    <script type="text/javascript">
+     // 中奖名单滚动
+    $('.lottery_list li:odd').addClass('liodd');
+
+    $(".lottery_list").myScroll({
+        speed: 40, //数值越大，速度越慢
+        rowHeight: 33 //li的高度
+    });
+</script>
+</body>
+</html>
