@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0037)file:///D:/Delete/2016-01-8/hehe.html -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>jQuery Bullseye - Viewport detection plug-in for jQuery! | Documentation and Demos</title>
+    <link rel="Stylesheet" type="text/css" href="./Succ_files/samples-global.css">
+    <link rel="shortcut icon" href="http://static.pixeltango.com/jQuery/Bullseye/favicon.ico">
+
+    <style type="text/css">
+        ul li span {
+        	padding-left: 10px;
+        	margin-left: 10px;
+        	border-left: 1px #ccc solid;
+        	font-size: .8em;
+        }
+        .outline {
+        	border-right: 250px solid #eee;
+        }
+        #be-small {
+        	width: 400px;
+        	height: 200px;
+        	overflow: auto;
+        	position: relative;
+        }
+        #be-red {
+        	width: 80px;
+        	height: 80px;
+        	position: absolute;
+        	left: 500px;
+        	top: 200px;
+        	background: red;
+        }
+        #be-small-info {
+        	padding-top: 10px;
+        	height: 30px;
+        }
+    </style>
+
+    
+</head>
+<body>
+    <ul id="top">
+        <li><a href="http://pixeltango.com/resources/web-development/jquery-bullseye-viewport-detection-events/">« Back to PixelTango.com (Source &amp; Download)</a></li>
+    </ul>
+
+    <div class="box">
+        <h1>jQuery Bullseye<span>Viewport detection plug-in for jQuery!</span></h1>
+        <p>A versatile &amp; lightweight plug-in for jQuery that adds <strong>enterviewport</strong> and <strong>leaveviewport</strong> events to elements.</p>
+    </div>
+
+    <div class="comp">
+        <p>Works in all modern browsers</p>
+    </div>
+
+    <div class="box">
+        <h1 class="dirt">Demos<span>See jQuery Bullseye in action!</span></h1>
+    </div>
+
+    <div class="box sample bullseye outline" id="B1" style="opacity: 1;">
+        <h2>Box 1</h2>
+        <p>Check the output log for events.</p>
+    </div>
+
+
+
+    <div id="footer">
+        Copyright © 2010 PixelTango - All Rights Reserved
+    </div>
+
+    <div id="log">
+        <h3>Output</h3>
+        <div id="log-content"><div style="display: none;">B3: enterviewport</div><div style="display: none;">B2: enterviewport</div><div style="display: none;">B1: enterviewport</div></div>
+    </div>
+
+	<script type="text/javascript" src="./Succ_files/jquery.min.js"></script>
+    <script type="text/javascript" src="./Succ_files/jquery.bullseye-1.0.js"></script>
+    
+	<script type="text/javascript">	
+		$(function(){
+			$(".bullseye").bind("enterviewport", function () {
+				debugger;
+			}).bullseye();
+		});
+    </script>
+
+
+</body></html>
