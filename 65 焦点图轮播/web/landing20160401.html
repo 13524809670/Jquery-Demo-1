@@ -1,0 +1,135 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>kancolle</title>
+    <meta name="keywords" content="kancolle">
+    <meta name="description" content="kancolle">
+
+    <link href="css/style.css" rel="stylesheet"/>
+    <!-- css file end -->
+</head>
+<body>
+
+   <div class="pro1_wrap clearfix">
+    <div class="banner_bg" id="slidepicturediv">
+        <ul class="banner_marquee_list" id="slidepicture">
+            <li style="background-image:url(images/lufei.png); background-position: 0% 0px; background-repeat: no-repeat; display: block">
+                <div class="banner_main">
+                    <a class="banner_link" href="javascript:;" target="_blank"></a>
+                </div>
+            </li>
+            <li style="background-image: url(images/suolong.png);  background-position: 0% 0px; background-repeat:no-repeat;">
+                <div class="banner_main">
+                    <a class="banner_link" href="javascript:;" target="_blank"></a>
+                </div>
+            </li>
+            <li style="background-image: url(images/shanzhi.png); background-position: 0% 0px; background-repeat: no-repeat;">
+                <div class="banner_main">
+                    <a class="banner_link" href="javascript:;" target="_blank"></a>
+                </div>
+            </li>
+        </ul>
+    </div>
+        <span class="zingBtn_01 on">
+        	<a href="javascript:;" class="zingBtnBg_01"></a>
+        	<div class="rond">
+                <div class="a"></div>
+            </div>
+        </span>
+        <span class="zingBtn_02">
+        	<a href="javascript:;" class="zingBtnBg_02"></a>
+        	<div class="rond">
+                <div class="a"></div>
+            </div>
+        </span>
+        <span class="zingBtn_03">
+        	<a href="javascript:;" class="zingBtnBg_03"></a>
+        	<div class="rond">
+                <div class="a"></div>
+            </div>
+        </span>
+</div>
+
+
+<!-- container end -->
+
+<!-- js file begin -->
+<script src="js/jquery-1.8.2.min.js"></script>
+
+
+<script>
+    /**
+     * tip of leading_register.js and register.js
+     * @type {Object}
+     */
+    var registerTip = new Object();
+    registerTip.game_url = "http://op2.joygames.me";
+    registerTip.unameCue = "User name between the 6-16 characters.";
+    registerTip.unameFirstMustLetter = "Initial letter cannot be number";
+    registerTip.emailCue = "Please enter a valid Email.";
+    registerTip.passwordCue = "At least 6 numbers or characters!";
+    registerTip.confirmPasswordCue = "Please enter your password again.";
+    registerTip.mandatory = "Mandatory";
+    registerTip.verify = "Verifying.........";
+    registerTip.signAgree = "Please sign the agreement";
+    registerTip.unameError = "User Name Already Exists!";
+    registerTip.emailError = "Email already in use Or Error!";
+    registerTip.passwordError = "At least 6 numbers or characters!";
+    registerTip.confirmPasswordError = "The Passwords do not match!";
+    registerTip.registerSuccess = "Register Successfully";
+    var accountTip = new Object();
+    accountTip.logOut = "Log Out....";
+    accountTip.logOutError = "Sign Out Error, Try Again";
+    accountTip.loginSuccess = "Login Successfully";
+
+    var checkIsLoginTip = new Object();
+    checkIsLoginTip.loginState = "You have logged in to the game!";
+    checkIsLoginTip.jumpInfo = "s back to the Game Page";
+    checkIsLoginTip.jumpUrl = "http://test.bleach.risengame.com";
+
+    var loginStatus = "";
+
+</script>
+<script>
+    var screenShow = function () {
+
+        var len = $("#slidepicture>li").length; //获取焦点图个数
+        var index = 0;
+        var picTimer;
+
+        //为数字按钮添加鼠标滑入事件，以显示相应的内容
+        $(".pro1_wrap span").mouseenter(function () {
+            index = $(".pro1_wrap span").index(this);
+            showPics(index);
+        }).eq(0).trigger("mouseenter");
+
+
+        //鼠标滑上焦点图时停止自动播放，滑出时开始自动播放
+        $(".pro1_wrap").hover(function () {
+            clearInterval(picTimer);
+        }, function () {
+            picTimer = setInterval(function () {
+                if (index == len) {
+                    index = 0;
+                }
+                showPics(index);
+                index++;
+            }, 3000); //此3000代表自动播放的间隔，单位：毫秒
+        }).trigger("mouseleave");
+
+        //显示图片函数，根据接收的index值显示相应的内容
+        function showPics(index) {
+            var currentobj = $("#slidepicture>li").eq(index);
+            currentobj.stop(true, true).fadeIn("fast");
+            $("#slidepicture>li").not(currentobj[0]).stop(true, true).hide();
+            $(".pro1_wrap span").removeClass("on").eq(index).addClass("on"); //为当前的按钮切换到选中的效果
+            $('body').find('.a').removeClass('test').eq(index).addClass('test');
+        }
+
+    };
+    screenShow();
+</script>
+<!-- js file end -->
+</body>
+</html>

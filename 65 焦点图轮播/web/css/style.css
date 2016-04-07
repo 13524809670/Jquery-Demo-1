@@ -1,0 +1,96 @@
+﻿/* reset css begin */
+html, body, div, p,
+a, img, input strong, ol, ul, li, form {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    outline: medium none;
+}
+
+input, button, textarea {
+    outline: none;
+}
+
+body {
+    width: 100%;
+    height: 1080px;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000;
+    overflow-x: hidden;
+    background: url(../images/bg.jpg) #000 center top no-repeat;
+}
+
+/* reset css end */
+
+.pro1_wrap{ width:1000px; margin-top:5px;  position: absolute;
+    top: 25px;
+    left: 100px; }
+
+.banner_bg { width:700px; height:700px;position:absolute; left:150px; top:40px; }
+.banner_marquee_list {  width:100%; margin:0 auto; height:900px; }
+.banner_marquee_list li { width:987px; height:900px;  display: none;}
+.banner_main { margin:0 auto; width:987px; height:900px;}
+.banner_marquee_list li a.banner_link { display:block; height:900px; width:987px; cursor:default; }
+.pro1_wrap span a{ display:block; width:100px; height:100px; }
+.zingBtn_01{ position:absolute; right:0px; top:90px; cursor:pointer;}
+.zingBtn_02{ position:absolute; right:0px; top:220px; cursor:pointer;}
+.zingBtn_03{ position:absolute; right:0px; top:352px; cursor:pointer;}
+
+.pro1_wrap span .zingBtnBg_01{ background:url(../images/people.png) 0 0 no-repeat; }
+.pro1_wrap span.on .zingBtnBg_01{ background:url(../images/people.png) -99px 0 no-repeat; }
+
+.pro1_wrap span .zingBtnBg_02{ background:url(../images/people.png) 0px -137px no-repeat; }
+.pro1_wrap span.on .zingBtnBg_02{ background:url(../images/people.png) -99px -137px no-repeat;}
+
+.pro1_wrap span .zingBtnBg_03{ background:url(../images/people.png) 0px -285px  no-repeat;}
+.pro1_wrap span.on .zingBtnBg_03{ background:url(../images/people.png) -99px -285px no-repeat;}
+.rond {
+  height:94px;
+  width:94px;
+  border-radius:50%;
+  position:absolute;
+  top:2px;
+  left:2px;
+  animation:rond 3s infinite;
+  -webkit-animation:rond 3s infinite;
+}
+.test {
+  height:20px;
+  width:12px;
+  position:absolute;
+  border-radius:50%;
+  top:0px;
+  left:10px;
+   margin:5px;
+   background:url(../images/tail.png) 0 0 no-repeat;
+transform:rotate(60deg);
+-ms-transform:rotate(60deg); 	/* IE 9 */
+-moz-transform:rotate(60deg); 	/* Firefox */
+-webkit-transform:rotate(60deg); /* Safari 和 Chrome */
+-o-transform:rotate(60deg);
+
+}
+
+
+@keyframes rond {
+  0% {transform : rotate(0deg);}
+  100% {transform : rotate(360deg);}
+}
+
+@-webkit-keyframes rond {
+    0%{-webkit-transform : rotate(0deg);}
+  100%{-webkit-transform : rotate(360deg);}
+}
+
