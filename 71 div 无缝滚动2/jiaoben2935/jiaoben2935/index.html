@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>jquery上下左右图片无缝滚动代码 - 站长素材</title>
+
+<style type="text/css">
+
+.g1,.g2,.g3,.g4{width:100%; height:180px; float:left; margin:0 5px 5px 0}
+</style>
+
+<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript" src="jquery.imgscroll.min.js"></script>
+<script type="text/javascript">
+$(function(){
+
+	imgScroll.rolling({
+		name:'g2',
+		width:'380px',
+		height:'180px',
+		direction:'left',
+		speed:20,
+		addcss:true
+	});
+
+})
+</script>
+</head>
+
+<body>
+
+
+<div class="g2">
+	<ul>
+    <li><img src="img/1.jpg"></li>
+    <li><img src="img/2.jpg"></li>
+    <li><img src="img/3.jpg"></li>
+    <li><img src="img/4.jpg"></li>
+    <li><img src="img/5.jpg"></li>
+    
+    </ul>
+</div>
+
+
+
+</body>
+</html>
