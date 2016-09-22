@@ -1,0 +1,106 @@
+<!doctype html>
+<html class="language-javascript" lang="en">
+<head>
+<title>jQuery Tag文本标签特效 - 站长素材</title>
+<meta charset="gb2312">
+<link rel="stylesheet" href="css/jquery-tag-this.css">
+<link rel="stylesheet" href="css/jquery-ui-1.9.2.custom.min.css">
+<link rel="stylesheet" href="css/style.css?v=5">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+<body>
+
+<h1>jQuery Tag-This</h1>
+
+<h3>Examples:</h3>
+
+<div class="example">
+<label for="simple-tags">Here's the simplest way to use Tag-This. Type some text and get a tag!</label>
+<input type="text" id="simple-tags" name="simple-tags">
+<button class="simple-clear-all-button small-button">clear all</button>
+<button class="see-code-button small-button">see code</button>
+<pre>
+<code>//set up Tag-This on our input (just call this once on page load)
+$('#simple-tags').tagThis()
+
+//that's it! type in the input above to see it in action.</code>
+</pre>
+
+</div>
+
+
+<div class="example">
+
+<label for="email-tags">This example takes email addresses, and displays an error state when an invalid or duplicate email address was entered.</label>
+<input name="email-tags" id="email-tags" />
+
+<button class="email-clear-all-button small-button">clear all</button>
+<button class="see-code-button small-button">see code</button>
+
+</div>
+
+<div class="example" id="autocomplete">
+
+<label for="fruit-tags">Tag-This can use jQuery UI's <b>Autocomplete</b> functionality too! Try typing the first few letters of the name of a fruit and select an item from the list to create a tag. </label>
+<input name="fruit-tags" id="fruit-tags" />
+
+<button class="fruit-clear-all-button small-button">clear all</button>
+<button class="see-code-button small-button">see code</button>
+</div>
+
+
+
+
+<div class="example">
+
+<label for="user-tags">Below is an example of creating tags programmatically. Click an 'Add' button below to add tags, then click 'see code' to see how it's done.</label>
+
+<input name="user-tags" id="user-tags" />
+
+<button class="user-clear-all-button small-button">clear all</button>
+<button class="see-code-button small-button">see code</button>
+
+<br>
+<div class="user cf" data-id="123">
+<img src="avatar.png" alt="Generic avatar"/>
+<span class="name">John Doe</span>
+<button class="add-button small-button">Add</button>
+</div>
+<div class="user cf" data-id="1234">
+<img src="avatar.png" alt="Generic avatar"/>
+<span class="name">Jane Doe</span>
+<button class="add-button small-button">Add</button>
+</div>
+<div class="user cf" data-id="12345">
+<img src="avatar.png" alt="Generic avatar"/>
+<span class="name">Dan Doe</span>
+<button class="add-button small-button">Add</button>
+</div>
+<div class="user cf" data-id="123456">
+<img src="avatar.png" alt="Generic avatar"/>
+<span class="name">Danielle Doe</span>
+<button class="add-button small-button">Add</button>
+</div>
+<div class="user cf" data-id="1234567">
+<img src="avatar.png" alt="Generic avatar"/>
+<span class="name">Mike Doe</span>
+<button class="add-button small-button">Add</button>
+</div>
+<div class="user cf" data-id="12345678">
+<img src="avatar.png" alt="Generic avatar"/>
+<span class="name">Leah Doe</span>
+<button class="add-button small-button">Add</button>
+</div>
+</div>
+
+<script src="js/jquery-1.11.0.min.js"></script>
+<script src="js/jquery-ui-1.9.2.custom.min.js"></script>
+<script src="js/jquery.tagthis.js?v=5"></script>
+<script src="js/main.js?v=5"></script>
+<script src="js/prism.js"></script>
+<div style="text-align:center;margin:50px 0; font:normal 14px/24px 'MicroSoft YaHei';">
+<p>适用浏览器：IE8、360、FireFox、Chrome、Safari、Opera、傲游、搜狗、世界之窗.</p>
+<p>来源：<a href="http://sc.chinaz.com/" target="_blank">站长素材</a></p>
+</div>
+</body>
+</html>
